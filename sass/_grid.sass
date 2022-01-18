@@ -1,0 +1,382 @@
+*
+    box-sizing: border-box
+
+body
+    margin: 0
+    background: url('bg_header.png') no-repeat
+    .hero
+        
+        margin: 0px 0px 185px 0px
+        &__body 
+            max-width: 1100px
+            margin: auto   
+        &__logo
+            margin: 165px 0px 0px 0px
+        &__image 
+            display: flex
+            justify-content: center
+            align-items: center
+        &__description
+            margin: 159px 0px 50px 0px
+        &__title
+            text-align: center
+            font-size: 34px
+            line-height: 40px
+            font-weight: 900
+            text-transform: uppercase
+            color: #fff
+            letter-spacing: 0.16em
+            +black
+        &__subtitle
+            text-align: center
+            font-size: 26px
+            line-height: 40px
+            font-weight: 400
+            text-transform: none
+            letter-spacing: 0.16em
+            color: #fff
+            +regular
+            &:after
+                content: ''
+                position: absolute
+                width: 105px
+                height: 2px
+                left: 50%
+                background-color: #fff
+                margin: 80px 0px 0px -52px
+        &__button
+            margin: 227px 0px 0px 0px
+            display: flex
+            justify-content: center
+            button
+                border: 1px solid #fff
+                background: none
+                padding: 17px 41px
+                font-size: 16px
+                line-height: 1.2
+                font-weight: 400
+                letter-spacing: 0.06em
+                text-transform: uppercase
+                color: #fff
+                +regular
+        &__arrow
+            margin: 75px 0px 0px 0px
+            display: flex
+            justify-content: center
+
+    .menu
+        &__body 
+            max-width: 425px
+            margin: auto 
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__items
+            margin: 22px 0px 24px 0px
+            text-decoration: none
+            font-size: 15px
+            line-height: 1.2
+            font-weight: 700
+            text-transform: uppercase
+            color: #3c3c3c
+            +regular
+        &__items_grey 
+            font-weight: 700
+            color: #ada074
+    
+    .about 
+        &__body 
+            max-width: 823px
+            margin: auto 
+        &__header 
+            margin: 130px 0px 0px 0px
+        &__title 
+            padding: 0px 0px 30px 0px
+            text-align: center
+            position: relative
+            font-size: 34px
+            line-height: 1.2
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: 0.16em
+            color: #000
+            +bold
+            &:after
+                content: ''
+                position: absolute
+                width: 81px
+                bottom: 0
+                height: 2px
+                left: 50%
+                background-color: #000
+                margin: 0px 0px 0px -40px
+        &__subtitle 
+            text-align: center
+            font-size: 14px
+            line-height: 26px
+            font-weight: 300
+            margin: 35px auto 69px auto
+            max-width: 688px
+            color: #868585
+            +light
+        &__row 
+            display: flex
+            justify-content: space-between
+        &__column 
+            flex: 0 0 33.333%
+
+        .item-about 
+            text-align: center
+            &__icon 
+                display: flex
+                justify-content: center
+                align-items: center
+                border: 2px solid #f1f1f1
+                border-radius: 50%
+                width: 92px
+                height: 92px
+                margin: 0px auto
+            &__title 
+                margin: 41px 0px 0px 0px
+                font-size: 22px
+                line-height: 1.2
+                font-weight: 400
+                letter-spacing: 0.16em
+                text-transform: uppercase
+                color: #000
+                +bold
+            &__subtitle 
+                margin: 36px 0px 95px 0px
+                font-size: 14px
+                line-height: 26px
+                font-weight: 300
+                color: #868585
+                +light
+            &__subtitle_narrow
+                max-width: 200px
+                margin: 36px auto 0px auto
+    
+    .portfolio
+        background: #e4e1e1
+        &__body 
+            max-width: 1100px
+            margin: auto
+        &__header 
+            padding: 107px 0px 0px 0px
+        &__title 
+            text-align: center
+            position: relative
+            padding: 0px 0px 35px 0px
+            font-size: 34px
+            line-height: 1.2
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: 0.16em
+            color: #000
+            +bold
+            &:after
+                content: ''
+                position: absolute
+                width: 81px
+                bottom: 0
+                height: 2px
+                left: 50%
+                background-color: #000
+                margin: 0px 0px 0px -40px
+        &__menu 
+            max-width: 295px
+            margin: 50px auto 120px auto
+            display: flex
+            justify-content: space-between
+        &__item 
+            font-size: 15px
+            line-height: 1.2
+            font-weight: 700
+            color: #3c3c3c
+            text-transform: uppercase
+            text-decoration: none
+            +regular
+        &__item_grey 
+            color: #ada074
+        
+        &__row 
+            display: flex
+            justify-content: space-between
+        &__column 
+            flex: 0 0 49%
+
+        .item-portfolio 
+            height: 365px
+            margin: 0px 0px 16px 0px
+            background: url("photo_1.jpg")
+            img
+                max-width: 100%
+                min-height: 100%
+                
+        &__button
+            margin: 64px 0px 0px 0px
+            display: flex
+            justify-content: center
+            button
+                margin: 0px 0px 62px 0px
+                border: 1px solid #000
+                background: none
+                padding: 17px 41px
+                font-size: 16px
+                line-height: 1.2
+                font-weight: 400
+                letter-spacing: 0.06em
+                text-transform: uppercase
+                color: #000
+                +regular
+
+    .partners 
+        background: url('bg_partners.png') no-repeat
+        background-position-y: bottom 
+        &__body 
+            max-width: 585px
+            margin: auto
+        &__header 
+            text-align: center
+        &__title 
+            padding: 100px 0px 0px 0px
+            font-size: 30px
+            line-height: 1.2
+            font-weight: 300
+            letter-spacing: 0.06em
+            text-transform: uppercase
+            color: #fff
+            +light
+        &__icons 
+            display: flex
+            justify-content: space-between
+            align-items: center
+        .item-partners
+            margin: 95px 0px 104px 0px
+
+    .contact
+        &__body
+            max-width: 720px
+            margin: auto
+        &__title
+            text-align: center
+            position: relative
+            margin: 183px 0px 0px 0px
+            padding: 0px 0px 35px 0px
+            font-size: 34px
+            line-height: 1.2
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: 0.16em
+            color: #000
+            +bold
+            &:after
+                content: ''
+                position: absolute
+                width: 81px
+                bottom: 0
+                height: 2px
+                left: 50%
+                background-color: #000
+                margin: 0px 0px 0px -40px
+        &__row 
+            display: flex
+            justify-content: space-between
+            margin: 120px 0px 0px 0px
+        &__column 
+            flex: 0 0 44%
+
+        .item-contact 
+            margin: 0px 0px 30px 0px
+            &__title 
+            font-size: 14px
+            line-height: 1.2
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: 0.06em
+            color: #000
+            +regular
+            &__input 
+                margin: 5px 0px 0px 0px
+                input
+                    width: 100%
+                    height: 35px
+                    background: #f8f7f7
+                    border: none
+                    border-top: 2px solid #000
+            &__wide-input
+                margin: 5px 0px 0px 0px
+                input
+                    width: 100%
+                    height: 118px
+                    background: #f8f7f7
+                    border: none
+                    border-top: 2px solid #000
+            &__button
+                display: flex
+                justify-content: end
+                margin: 0px 0px 100px 0px
+                button
+                    border: 1px solid #000
+                    background: none
+                    padding: 5px 10px
+                    font-size: 16px
+                    line-height: 1.2
+                    font-weight: 400
+                    letter-spacing: 0.06em
+                    text-transform: uppercase
+                    color: #000
+                    +regular
+        .column-item 
+            &__text
+                font-size: 17px
+                line-height: 26px
+                font-weight: 300
+                color: #000
+                +light
+            &__title
+                margin: 45px 0px 40px 0px
+                font-size: 17px
+                line-height: 26px
+                font-weight: 700
+                color: #000
+                +light
+            &__subtitle
+                font-size: 17px
+                line-height: 26px
+                font-weight: 300
+                color: #000
+                +light
+            &__subtitle_hyper
+                font-weight: 700
+                text-decoration: none
+
+    .footer 
+        background: #3c3c3c
+        &__body 
+            max-width: 270px
+            margin: auto
+            padding: 48px 0px 0px 0px
+        &__logo 
+            margin: 0px 0px 41px 0px
+            display: flex
+            justify-content: center
+            align-items: center
+        &__menu 
+            display: flex
+            justify-content: space-between
+        &__item 
+            font-size: 14px
+            line-height: 1.2
+            font-weight: 400
+            color: #a4a4a4
+            text-decoration: none
+            +regular
+        &__text 
+            padding: 34px 0px 50px 0px
+            text-align: center
+            font-size: 14px
+            line-height: 1.2
+            font-weight: 400
+            color: #6c6c6c
+            font-family: 'Myriad Pro' ,sans-serif

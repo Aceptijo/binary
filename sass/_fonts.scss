@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Lato Regular';
+    src: url('/binary/fonts/Lato-Regular.eot');
+    src: url('/binary/fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/binary/fonts/Lato-Regular.woff') format('woff'),
+    url('/binary/fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Light';
+    src: url('/binary/fonts/Lato-Light.eot');
+    src: url('/binary/fonts/Lato-Light.eot?#iefix') format('embedded-opentype'),
+    url('/binary/fonts/Lato-Light.woff') format('woff'),
+    url('/binary/fonts/Lato-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Bold';
+    src: url('/binary/fonts/Lato-Bold.eot');
+    src: url('/binary/fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+    url('/binary/fonts/Lato-Bold.woff') format('woff'),
+    url('/binary/fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato Black';
+    src: url('/binary/fonts/Lato-Black.eot');
+    src: url('/binary/fonts/Lato-Black.eot?#iefix') format('embedded-opentype'),
+    url('/binary/fonts/Lato-Black.woff') format('woff'),
+    url('/binary/fonts/Lato-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin regular {
+    font-family: 'Lato Regular' ,sans-serif;
+}
+@mixin light {
+    font-family: 'Lato Light' ,sans-serif;
+}
+@mixin bold {
+    font-family: 'Lato Bold' ,sans-serif;
+}
+@mixin black {
+    font-family: 'Lato Black' ,sans-serif;
+}
+
