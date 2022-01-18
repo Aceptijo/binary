@@ -1,0 +1,16 @@
+{
+  "name": "binary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d binary"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://Aceptijo.io/binary",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
